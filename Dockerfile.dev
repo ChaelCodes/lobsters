@@ -1,5 +1,4 @@
 # Use an official Ruby image as a base
-ARG RUBY_VERSION
 FROM ruby:3.4.7
 
 # Install dependencies
