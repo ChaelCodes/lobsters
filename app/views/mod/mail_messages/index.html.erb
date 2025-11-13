@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Mod mail messages" %>
+
+<h1>Mod mail messages</h1>
+
+<div id="mod_mail_messages">
+  <% @mod_mail_messages.each do |mod_mail_message| %>
+    <%= render mod_mail_message %>
+    <p>
+      <%= link_to "Show this mod mail message", mod_mail_message %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mod mail message", new_mod_mail_message_path %>

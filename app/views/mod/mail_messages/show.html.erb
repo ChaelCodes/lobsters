@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mod_mail_message %>
+
+<div>
+  <%= link_to "Edit this mod mail message", edit_mod_mail_message_path(@mod_mail_message) %> |
+  <%= link_to "Back to mod mail messages", mod_mail_messages_path %>
+
+  <%= button_to "Destroy this mod mail message", @mod_mail_message, method: :delete %>
+</div>
