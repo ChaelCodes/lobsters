@@ -1,0 +1,20 @@
+name: "Check Dockerfile Ruby version"
+
+on:
+  push:
+    paths: 
+      - .ruby-version
+      - Dockerfile.dev
+  pull_request:
+    paths: 
+      - .ruby-version
+      - Dockerfile.dev
+  workflow_dispatch
+
+jobs:
+  check-ruby-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: script/check_dockerfile_ruby_version.sh
+    
