@@ -9,7 +9,7 @@ on:
     paths: 
       - .ruby-version
       - Dockerfile.dev
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   check-ruby-version:
